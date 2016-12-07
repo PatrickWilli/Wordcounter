@@ -15,12 +15,11 @@ public class Wordcounter
 		this.pathtofile = pathtofile;
 	}
 	
-	public void startcounting()
+	public int startcounting()
 	{
 		try
 		{
 			Scanner scan = new Scanner(new FileInputStream(pathtofile));
-			//scan.useDelimiter(" ");
 			while(scan.hasNext())
 			{
 				scan.next();
@@ -34,5 +33,6 @@ public class Wordcounter
 		{
 			
 		}
+		return counter;
 	}
 }

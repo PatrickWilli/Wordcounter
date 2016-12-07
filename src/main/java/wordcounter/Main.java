@@ -4,7 +4,14 @@ public class Main
 {
 	public static void main(String[]args)
 	{
-		Wordcounter c = new Wordcounter("C:\\Users\\phamm\\Desktop\\count.txt");
+		
+		if(args.length < 1)
+		{
+			System.out.println("Please specify path to an textfile!");
+			System.exit(0);
+		}
+		Wordcounter c = new Wordcounter(args[0]);
 		c.startcounting();
+		
 	}
 }
