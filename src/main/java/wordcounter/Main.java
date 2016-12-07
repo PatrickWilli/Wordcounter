@@ -4,7 +4,7 @@ public class Main
 {
 	public static void main(String[]args)
 	{
-		Counter c = new Counter("C:\\Users\\phamm\\Desktop\\count.txt");
-		c.analyse();
+		Wordcounter c = new Wordcounter("C:\\Users\\phamm\\Desktop\\count.txt");
+		c.startcounting();
 	}
 }
